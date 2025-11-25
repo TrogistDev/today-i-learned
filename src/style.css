@@ -39,9 +39,19 @@ body {
   margin-bottom: 40px;
   display: flex;
   align-items: center;
+  justify-items: center;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
-
+@media (max-width: 600px) {
+  .header{
+    justify-content: center;
+  }
+  .header .logo{
+    text-align: right;
+  }
+  
+}
 .main {
   display: grid;
   grid-template-columns: 250px 1fr;
